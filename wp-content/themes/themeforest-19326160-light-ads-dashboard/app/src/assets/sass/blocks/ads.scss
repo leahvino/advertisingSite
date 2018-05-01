@@ -1,0 +1,66 @@
+.ads__banners {
+    text-align: $ads-banners-align;
+
+    @media #{$media-md} {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    @media #{$media-xs} {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+.ads__info {
+
+    .table__wrapper {
+        margin-top: 0;
+    }
+
+    @media #{$media-md} {
+        margin-top: 20px;
+    }
+}
+
+.ads__back-link {
+    margin: 0;
+
+    font-size: $ads-inner-back-link-size;
+    text-align: $ads-inner-back-link-align;
+
+    a {
+        display: inline-block;
+    }
+
+    @media #{$media-sm} {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+.ads__price {
+    margin-top: 10px;
+
+    font-size: $ads-inner-price-size;
+
+    span {
+        color: $ads-inner-price-color;
+        font-weight: $ads-inner-price-weight;
+    }
+}
+
+.ads__text {
+    margin-top: $ads-inner-text-margin-top;
+}
+
+.ads__footer {
+    margin-top: $ads-inner-footer-margin-top;
+
+    color: $ads-inner-footer-color;
+    text-align: $ads-inner-footer-text-align;
+}
+

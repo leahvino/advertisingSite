@@ -1,0 +1,123 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header_guest.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="login">
+            <h3 class="text-center">Signup</h3>
+
+            <div class="tabs" id="tabs1">
+                <div class="tabs__nav" data-tabs-for="#tabs1" role="tablist">
+                    <a class="tabs__nav-item  active" href="#individual" role="tab">Individual</a>
+                    <a class="tabs__nav-item" href="#entity" role="tab">Entity</a>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__item  active" id="individual" role="tabpanel">
+                        <form action="/" method="post">
+                            <div class="form__group">
+                                <input class="input" type="text" name="ind_firstname" id="ind_firstname" placeholder="First Name">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="text" name="ind_secondname" id="ind_secondname" placeholder="Second Name">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="email" name="ind_email" id="ind_email" placeholder="Email">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="tel" name="ind_phone" id="ind_phone" placeholder="Phone number">
+                            </div>
+                            <div class="form__group">
+                                <div class="select">
+                                    <select name="ind_country" id="ind_country">
+                                        <option value="0" selected disabled>Country</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="password" name="ind_password" id="ind_password" placeholder="Password">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="password" name="ind_confirm_password" id="ind_confirm_password" placeholder="Confirm Password">
+                            </div>
+                            <div class="form__group">
+                                <button class="btn  btn--red  btn--full" type="submit">Signup</button>
+                                <div class="form__hint  text-center">By registering you agree with our <a href="#rules_modal" data-toggle="modal">rules &amp; conditions</a></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tabs__item" id="entity" role="tabpanel">
+                        <form action="/" method="post">
+                            <div class="form__group">
+                                <input class="input" type="text" name="ent_firstname" id="ent_firstname" placeholder="First Name">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="text" name="ent_secondname" id="ent_secondname" placeholder="Second Name">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="email" name="ent_email" id="ent_email" placeholder="Email">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="tel" name="ent_phone" id="ent_phone" placeholder="Phone number">
+                            </div>
+                            <div class="form__group">
+                                <div class="select">
+                                    <select name="ent_country" id="ent_country">
+                                        <option value="0" selected disabled>Country</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="text" name="ent_company" id="ent_company" placeholder="Company name">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="text" name="ent_address" id="ent_address" placeholder="Address">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="text" name="ent_zip" id="ent_zip" placeholder="ZIP code">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="text" name="ent_vat" id="ent_vat" placeholder="VAT number">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="password" name="ent_password" id="ent_password" placeholder="Password">
+                            </div>
+                            <div class="form__group">
+                                <input class="input" type="password" name="ent_confirm_password" id="ent_confirm_password" placeholder="Confirm Password">
+                            </div>
+                            <div class="form__group">
+                                <button class="btn  btn--red  btn--full" type="submit">Signup</button>
+                                <div class="form__hint  text-center">By registering you agree with our <a href="#rules_modal" data-toggle="modal">rules &amp; conditions</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /.tab -->
+        </div><!-- /.login -->
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Rules modal -->
+//= templates/rules_modal.html
+
+
+<!-- JS -->
+//= templates/end.html

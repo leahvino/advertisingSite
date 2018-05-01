@@ -1,0 +1,297 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="row">
+            <div class="col-lg-10  col-md-8">
+                <div class="cat__inner-title">Cars</div>
+            </div>
+            <div class="col-lg-2  col-md-4">
+                <div class="select">
+                    <select name="sort" id="sort">
+                        <option value="all" selected>All</option>
+                        <option value="today">Today (1215)</option>
+                        <option value="yesterday">Yesterday (1698)</option>
+                    </select>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- Filter -->
+                //= templates/filter.html
+
+                <a class="filter__show" href="#" id="js-show-filter"><i class="fa fa-bars"></i>Show filter</a>
+
+            </div><!-- /.col-xs-12 -->
+        </div><!-- /.row -->
+
+        <div class="row  subcat">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Alfa Romeo <span class="cat__ads-count">(654)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Audi <span class="cat__ads-count">(7562)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">BMW  <span class="cat__ads-count">(3243)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Cadillac  <span class="cat__ads-count">(124)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Chevrolet <span class="cat__ads-count">(321)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Chrysler <span class="cat__ads-count">(356)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Citroen  <span class="cat__ads-count">(642)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Dacia <span class="cat__ads-count">(112)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Daewoo <span class="cat__ads-count">(12)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Daihatsu <span class="cat__ads-count">(31)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Dodge <span class="cat__ads-count">(4212)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Fiat <span class="cat__ads-count">(3542)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Ford <span class="cat__ads-count">(8742)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Honda <span class="cat__ads-count">(1242)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Hummer <span class="cat__ads-count">(65)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Hyundai <span class="cat__ads-count">(65)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Infiniti <span class="cat__ads-count">(421)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Isuzu <span class="cat__ads-count">(128)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Jaguar <span class="cat__ads-count">(412)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Jeep <span class="cat__ads-count">(872)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Kia <span class="cat__ads-count">(12374)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Lancia <span class="cat__ads-count">(2136)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Land Rover <span class="cat__ads-count">(345)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Lexus <span class="cat__ads-count">(7641)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Lincoln <span class="cat__ads-count">(311)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mazda <span class="cat__ads-count">(8532)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mercedes <span class="cat__ads-count">(7541)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mini Cooper <span class="cat__ads-count">(4121)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mitsubishi <span class="cat__ads-count">(4531)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Nissan <span class="cat__ads-count">(1243)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Opel <span class="cat__ads-count">(4512)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Peugeot <span class="cat__ads-count">(5212)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Pontiac <span class="cat__ads-count">(753)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Porsche <span class="cat__ads-count">(1231)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Renault <span class="cat__ads-count">(6531)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Rover <span class="cat__ads-count">(864)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Saab <span class="cat__ads-count">(432)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Seat <span class="cat__ads-count">(872)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Skoda <span class="cat__ads-count">(12374)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Smart <span class="cat__ads-count">(2136)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">SsangYong <span class="cat__ads-count">(345)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Subaru <span class="cat__ads-count">(7641)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Suzuki <span class="cat__ads-count">(311)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Toyota <span class="cat__ads-count">(8532)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Volkswagen <span class="cat__ads-count">(7541)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Volvo <span class="cat__ads-count">(4121)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item  cat__list-item--title">
+                                <b>Rare cars</b>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Retro cars <span class="cat__ads-count">(120)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Sports cars <span class="cat__ads-count">(321)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Tuned cars <span class="cat__ads-count">(431)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Exclusive cars <span class="cat__ads-count">(31)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Electric vehicles <span class="cat__ads-count">(541)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Other brands <span class="cat__ads-count">(148)</span></a>
+                            </li>
+                            <li class="cat__list-item  cat__list-item--title">
+                                <b>Exchange</b>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Exchange of cars <span class="cat__ads-count">(142)</span></a>
+                            </li>
+                            <li class="cat__list-item  cat__list-item--title">
+                                <b>Other</b>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Repair, maintenance <span class="cat__ads-count">(5431)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Towing <span class="cat__ads-count">(487)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Car rent <span class="cat__ads-count">(1567)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Parts and accessories <span class="cat__ads-count">(15341)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Trailers <span class="cat__ads-count">(2123)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">With defects or after crash <span class="cat__ads-count">(4721)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Services for disabled <span class="cat__ads-count">(9812)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Tuning <span class="cat__ads-count">(1411)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Tires <span class="cat__ads-count">(1264)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.col-lg-9 -->
+
+            <div class="col-lg-3">
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200" width="200" height="200" alt=""></a>
+                        <div class="banner__price">$12300</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200" width="200" height="200" alt=""></a>
+                        <div class="banner__price">$10000</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

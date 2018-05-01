@@ -1,0 +1,101 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="row">
+            <div class="col-lg-2  col-md-4  col-sm-6">
+                <div class="select">
+                    <select name="filter" id="filter">
+                        <option value="all">All</option>
+                        <option value="cars">Cars</option>
+                        <option value="cars">Apartments</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-10  col-md-8  col-sm-6">
+                <div class="text-right">
+                    <a class="btn btn--red" href="add_ads.html">Create new add</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="table__wrapper">
+            <table class="table  table--hover  sortable" data-sortable>
+                <thead>
+                    <tr>
+                        <th data-sortable="false">Photo</th>
+                        <th data-sortable="false">Title</th>
+                        <th>Price</th>
+                        <th>Exp Datе</th>
+                        <th>Views</th>
+                        <th class="actions" data-sortable="false">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title"><a href="#">BMW 530 Best car for you</a></td>
+                        <td>$10000</td>
+                        <td>01.01.2017</td>
+                        <td>2354</td>
+                        <td class="actions">
+                            <a class="btn  btn--xs  btn--blue" href="banner.html">Banner</a>
+                            <button class="btn  btn--xs  btn--green" type="button">Extend</button>
+                            <a class="btn  btn--xs  btn--orange" href="#" data-toggle="modal" data-target="#confirm_modal" role="button">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title"><a href="#">Appartment in new building</a></td>
+                        <td>$200000</td>
+                        <td>15.02.2017</td>
+                        <td>1025</td>
+                        <td class="actions">
+                            <a class="btn  btn--xs  btn--blue" href="banner.html">Banner</a>
+                            <button class="btn  btn--xs  btn--green" type="button">Extend</button>
+                            <a class="btn  btn--xs  btn--orange" href="#" data-toggle="modal" data-target="#confirm_modal" role="button">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- /.table__wrapper -->
+
+        <div class="pagination">
+            <a href="#" class="pagination__item  pagination__item--disabled" aria-label="Previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="#" class="pagination__item  pagination__item--current">1</a>
+            <a href="#" class="pagination__item">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item" aria-label="Next"><i class="fa fa-angle-double-right"></i></a>
+        </div>
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/confirm-modal.html
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

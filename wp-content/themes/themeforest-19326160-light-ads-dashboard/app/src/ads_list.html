@@ -1,0 +1,140 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="row">
+            <div class="col-lg-10  col-md-8">
+                <div class="breadcrumbs">
+                    <a href="index.html" class="breadcrumbs__item">Home</a>
+                    <a href="subcat.html" class="breadcrumbs__item">Cars</a>
+                    <span class="breadcrumbs__item  current">BMW</span>
+                </div>
+            </div>
+            <div class="col-lg-2  col-md-4">
+                <div class="select">
+                    <select name="sort" id="sort">
+                        <option value="all" selected>All</option>
+                        <option value="today">Today (1215)</option>
+                        <option value="yesterday">Yesterday (1698)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- Filter -->
+                //= templates/filter.html
+
+                <a class="filter__show" href="#" id="js-show-filter"><i class="fa fa-bars"></i>Show filter</a>
+
+            </div><!-- /.col-xs-12 -->
+        </div><!-- /.row -->
+
+        <div class="table__wrapper">
+            <table class="table  table--hover  sortable" data-sortable>
+                <thead>
+                    <tr>
+                        <th data-sortable="false">Photo</th>
+                        <th data-sortable="false">Title</th>
+                        <th data-sortable="false">Model</th>
+                        <th>Year</th>
+                        <th>Capacity</th>
+                        <th>Mileage</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="location.href='ads_inner.html'">
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title">BMW 530 Best car for you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, nisi, vitae. Repellat blanditiis expedita quae amet magni earum aut vel vitae, laudantium odit minima voluptate pariatur non. Eius, sequi, sint.</td>
+                        <td>530</td>
+                        <td>2008</td>
+                        <td>3.0D</td>
+                        <td>162000</td>
+                        <td>$10900</td>
+                    </tr>
+                    <tr onclick="location.href='ads_inner.html'">
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title">BMW 330 Best car for you</td>
+                        <td>330</td>
+                        <td>2010</td>
+                        <td>3.0D</td>
+                        <td>111500</td>
+                        <td>$14900</td>
+                    </tr>
+                    <tr class="ads-list__special" onclick="location.href='ads_inner.html'">
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title">BMW 320 Best car for you. Special ads with yellow background</td>
+                        <td>320</td>
+                        <td>2007</td>
+                        <td>2.0</td>
+                        <td>95500</td>
+                        <td>$8900</td>
+                    </tr>
+                    <tr onclick="location.href='ads_inner.html'">
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title">BMW 530 Best car for you</td>
+                        <td>530</td>
+                        <td>2008</td>
+                        <td>3.0D</td>
+                        <td>162000</td>
+                        <td>$10900</td>
+                    </tr>
+                    <tr onclick="location.href='ads_inner.html'">
+                        <td class="ads-list__photo">
+                            <img src="http://placehold.it/50" width="50" height="50" alt="">
+                        </td>
+                        <td class="ads-list__title">BMW 330 Best car for you</td>
+                        <td>330</td>
+                        <td>2010</td>
+                        <td>3.0D</td>
+                        <td>111500</td>
+                        <td>$14900</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- /.table__wrapper -->
+
+        <div class="pagination">
+            <a href="#" class="pagination__item  pagination__item--disabled" aria-label="Previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="#" class="pagination__item  pagination__item--current">1</a>
+            <a href="#" class="pagination__item">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item" aria-label="Next"><i class="fa fa-angle-double-right"></i></a>
+        </div>
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

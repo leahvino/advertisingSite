@@ -1,0 +1,85 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+       <h1 class="page__title">Add banner</h1>
+
+       <div class="row">
+            <div class="col-lg-4  col-md-6">
+                <form action="/" method="post">
+                    <div class="form__group">
+                        <label class="label" for="title">Banner title</label>
+                        <input class="input" type="text" name="title" placeholder="Banner title" id="title" data-banner="title" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="text">Banner text</label>
+                        <input class="input" type="text" name="text" placeholder="Banner text" id="text" data-banner="text" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="count">Display count</label>
+                        <div class="select">
+                            <select name="count" id="count">
+                                <option value="10000" selected>10000</option>
+                                <option value="100000">100000</option>
+                                <option value="200000">200000</option>
+                                <option value="500000">500000</option>
+                                <option value="700000">700000</option>
+                                <option value="1000000">1000000</option>
+                            </select>
+                        </div>
+                        <div class="form__hint">$0.10 = 1000 ads display</div>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="intensity">Ads intensity</label>
+                        <div class="select">
+                            <select name="intensity" id="intensity">
+                                <option value="low">Low</option>
+                                <option value="normal">Normal</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        $<span id="js-banner-sum"></span>
+                    </div>
+                    <div class="form__group">
+                        <button class="btn  btn--green  btn--full" type="submit">Checkout</button>
+                    </div>
+                </form>
+            </div><!-- /.col-lg-4  col-md-6 -->
+            <div class="col-lg-4  offset-md-1  col-md-5">
+                <div class="banner">
+                    <a href="#"><img src="http://placehold.it/200" width="200" height="200" alt=""></a>
+                    <div class="banner__price">$10000</div>
+                    <div class="banner__title" id="js-banner-title">Banner title</div>
+                    <div class="banner__text" id="js-banner-text">Banner text</div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

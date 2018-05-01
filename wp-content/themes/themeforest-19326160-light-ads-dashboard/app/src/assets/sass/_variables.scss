@@ -1,0 +1,944 @@
+/*========================
+1. Settings
+2. Form & hints
+3. Label
+4. Checkbox
+5. Radio Buttons
+6. Inputs & textarea
+7. Buttons
+8. Dropdowns
+9. Breadcrumbs
+10. Pagination
+11. Alerts
+12. Lists
+13. Select
+14. Table
+15. Tabs
+16. Accordion
+17. Navbar
+18. Modals
+19. Sortable
+20. Ads list
+21. Ads inner
+22. Banner
+23. Filter
+24. Footer
+25. Header
+26. Login
+27. Balance
+28. Page
+29. Logo
+30. Categories
+31. Slider
+32. Slider Thumbs
+33. Images Upload
+34. Bootstrap 4 Grid
+=========================*/
+
+
+/* ======================
+1. Settings
+=========================*/
+$img: "../i/";
+
+
+/* Font family
+=========================*/
+$roboto_c:    'Roboto Condensed', sans-serif;
+
+
+/* Media queries
+=========================*/
+$media-xs: "(max-width: 575px)";
+$media-sm: "(max-width: 767px)";
+$media-md: "(max-width: 991px)";
+$media-lg: "(max-width: 1199px)";
+
+
+/* Font sizes
+=========================*/
+$regular_font_size: 16px;
+$title_font_size:   2em;
+
+
+/* Colors
+=========================*/
+$black:         #3e3e3e;
+$white:         #fff;
+$real-black:    #000;
+$gray:          #9e9e9e;
+$light-gray:    #efefef;
+$blue-gray:     #607d8b;
+$red:           #f44336;
+$pink:          #ec407a;
+$purple:        #ab47bc;
+$deep-purple:   #673ab7;
+$indigo:        #3f51b5;
+$blue:          #1976d2;
+$light-blue:    #03a9f4;
+$cyan:          #00acc1;
+$teal:          #009688;
+$green:         #4caf50;
+$light-green:   #8bc34a;
+$lime:          #cddc39;
+$yellow:        #fbc02d;
+$amber:         #ffa000;
+$orange:        #fb8c00;
+$deep-orange:   #ff7043;
+$brown:         #795548;
+
+$colors: (gray $gray) (red $red) (pink $pink) (purple $purple) (deep-purple $deep-purple) (indigo $indigo) (blue $blue) (light-blue $light-blue) (cyan $cyan) (teal $teal) (green $green) (light-green $light-green) (lime $lime) (yellow $yellow) (amber $amber) (orange $orange) (deep-orange $deep-orange) (brown $brown) (black $black);
+
+$block-margin: 20px 0;
+
+
+
+
+/* ======================
+2. Form & hints
+=========================*/
+$form-margin:                   20px 0;
+$form-group-margin-bottom:      1em;
+
+$form-hint-margin-top:          3px;
+$form-hint-color:               $gray;
+$form-hint-font-size:           .8em;
+$form-hint-line-height:         1.2;
+
+$form-fieldset-padding: 1em;
+$form-fieldset-margin: 0 0 1em;
+$form-fieldset-bg: $white;
+$form-fieldset-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+
+
+
+
+/* ======================
+3. Label
+=========================*/
+$label-margin-right:    10px;
+$label-margin-bottom:   5px;
+
+$label-font-size:       1em;
+$label-line-height:     1.4;
+$label-color:           $black;
+$label-weight:          bold;
+$label-span-weight:     normal;
+
+
+
+
+/* ======================
+4. Checkbox
+=========================*/
+
+$checkbox-before-border-color:              $gray;
+$checkbox-before-border:                    1px solid $checkbox-before-border-color;
+$checkbox-before-bg:                        $white;
+$checkbox-before-bg-checked:                $green;
+$checkbox-before-border-color-checked:      $checkbox-before-bg-checked;
+$checkbox-before-width:                     20px;
+$checkbox-before-height:                    20px;
+$checkbox-before-radius:                    3px;
+
+$checkbox-color:                            $black;
+$checkbox-indent:                           $checkbox-before-width + 10;
+$checkbox-font-size:                        1em;
+$checkbox-margin-bottom:                    5px;
+$checkbox-inline-margin-right:              5px;
+
+$checkbox-after-icon:                       "\f00c";
+$checkbox-after-color:                      $white;
+$checkbox-after-size:                       $checkbox-before-height - 3;
+$checkbox-after-line-height:                1;
+
+/* Disabled */
+$checkbox-disabled-color:                   $gray;
+$checkbox-before-disabled-border-color:     lighten($checkbox-before-border-color, 15%);
+$checkbox-after-disabled-color:             $gray;
+$checkbox-after-disabled-opacity:           .3;
+$checkbox-cursor-disabled:                  not-allowed;
+
+/* Error */
+$checkbox-color-error:                      $red;
+$checkbox-before-border-color-error:        $red;
+
+
+
+
+
+/* ======================
+5. Radio Buttons
+=========================*/
+
+$radio-before-width:                         20px;
+$radio-before-height:                        20px;
+$radio-before-border-color:                  $gray;
+$radio-before-border:                        1px solid $radio-before-border-color;
+$radio-before-bg:                            $white;
+
+$radio-color:                                $black;
+$radio-font-size:                            1em;
+$radio-indent:                               $radio-before-width + 10;
+$radio-margin-bottom:                        5px;
+$radio-inline-margin-right:                  5px;
+
+$radio-after-bg:                             $gray;
+$radio-after-width:                          $radio-before-width - 6;
+$radio-after-height:                         $radio-before-height - 6;
+
+/* Disabled */
+$radio-color-disabled:                       $gray;
+$radio-opacity-disabled:                     .5;
+$radio-before-border-color-disabled:         lighten($radio-before-border-color, 15%);
+$radio-cursor-disabled:                      not-allowed;
+
+/* Error */
+$radio-color-error:                          $red;
+$radio-before-border-color-error:            $red;
+
+
+
+
+
+/* ======================
+6. Inputs & textarea
+=========================*/
+
+$input-height:                  36px;
+$input-padding:                 .4em .5em;
+$input-color:                   $black;
+$input-font-size:               1em;
+$input-line-height:             1.2;
+$input-shadow-default:          inset 0 1px 4px rgba(0, 0, 0, .2);
+$input-placeholder-color:       lighten($gray, 20%);
+$input-bg:                      $white;
+$input-bg-focus:                lighten($light-blue, 48%);
+
+$input-icon-color:              $gray;
+$input-icon-color-focus:        $black;
+
+$input-label-bg:                darken($light-gray, 5%);
+$input-label-padding:           .38em .9em;
+$input-label-font-size:         1em;
+$input-label-line-height:       1.4;
+$input-label-color:             lighten($black, 10%);
+
+/* Textarea */
+$textarea-height:               194px;
+$textarea-padding:              .5em .9em;
+$textarea-line-height:          1.4;
+$textarea-color:                $black;
+$textarea-resize:               none;
+$textarea-resize-focus:         vertical;
+
+/* States */
+$input-error:                   $red;
+$input-success:                 $green;
+
+
+
+
+
+/* ======================
+7. Buttons
+=========================*/
+$btn-padding:                       .5em 1.3em;
+$btn-margin-bottom:                 5px;
+$btn-font-size:                     1em;
+$btn-line-height:                   1.25em;
+$btn-align:                         center;
+
+$btn-default-color:                 $black;
+$btn-default-bg:                    $light-gray;
+
+/* Sizes */
+$btn-xs-font-size:                  .7em;
+$btn-s-font-size:                   .8em;
+$btn-m-font-size:                   1.2em;
+$btn-l-font-size:                   1.4em;
+$btn-xl-font-size:                  1.6em;
+$btn-xxl-font-size:                 1.8em;
+
+$btn-icon-margin:                   .5em;
+
+
+
+
+
+/* ======================
+8. Dropdowns
+=========================*/
+$dropdown-min-width:            150px;
+$dropdown-shadow:               0 0 .3em rgba(0, 0, 0, .3);
+$dropdown-zindex:               100;
+
+$dropdown-link-padding:         .4em .6em;
+$dropdown-link-bg:              $white;
+$dropdown-link-bg-hover:        $light-gray;
+$dropdown-link-color:           $blue;
+$dropdown-link-font-size:       1em;
+$dropdown-link-line-height:     1.2;
+
+
+
+
+
+/* ======================
+9. Breadcrumbs
+=========================*/
+$breadcrumbs-color:                         $blue;
+$breadcrumbs-color-current:                 $gray;
+$breadcrumbs-font-size:                     .8em;
+
+$breadcrumbs-item-indent:                   .4em;
+$breadcrumbs-item-divider:                  "/";
+$breadcrumbs-item-divider-margin-left:      .5em;
+$breadcrumbs-item-arrow:                    "\f105";
+$breadcrumbs-item-font-size:                1em;
+$breadcrumbs-item-line-height:              1;
+
+
+
+
+
+
+/* ======================
+10. Pagination
+=========================*/
+$pagination-width:              36px;
+$pagination-height:             36px;
+$pagination-bg:                 $white;
+$pagination-bg-active:          $red;
+$pagination-border:             1px solid lighten($gray, 20%);
+$pagination-align:              center;
+$pagination-disabled-opacity:   .4;
+
+$pagination-color:              $black;
+$pagination-color-hover:        $white;
+$pagination-color-current:      $white;
+$pagination-font-size:          1em;
+
+
+
+
+
+/* ======================
+11. Alerts
+=========================*/
+$alert-margin-bottom:           10px;
+$alert-padding:                 1em 1.5em;
+$alert-font-size:               .9em;
+$alert-line-height:             1.2;
+$alert-default-bg:              $white;
+$alert-default-color:           $black;
+$alert-default-border-width:    1px;
+
+/* Close button */
+$alert-close-color:             inherit;
+$alert-close-font-size:         1em;
+$alert-close-line-height:       1;
+$alert-close-top:               .3em;
+$alert-close-right:             .5em;
+$alert-close-zindex:            1;
+
+
+
+/* ======================
+12. Lists
+=========================*/
+$list-color:                        $black;
+$list-font-size:                    1em;
+$list-line-height:                  1.2;
+$list-align:                        left;
+$list-title-weight:                 bold;
+
+$list-item-margin-bottom:           7px;
+$list-item-text:                    lighten($list-color, 20%);
+
+
+
+
+/* ======================
+13. Select
+=========================*/
+$select-height:                 36px;
+$select-font-size:              1em;
+$select-line-height:            1.3;
+$select-color:                  $black;
+$select-padding:                0 2.3em 0 .5em;
+
+$select-divider-width: 1px;
+$select-divider-right-indent:   2em;
+$select-divider-color:          lighten($gray, 20%);
+$select-divider-right:          2em;
+$select-divider-zindex:         1;
+
+$select-triangle-size:          5px;
+$select-triangle-color:         currentColor;
+$select-triangle-top:           50%;
+$select-triangle-right:         .75em;
+$select-triangle-zindex:        .1;
+
+$select-multiple-height:        100px;
+
+
+
+
+
+/* ======================
+14. Table
+=========================*/
+$table-color:                       $black;
+$table-font-size:                   1em;
+$table-line-height:                 1.2;
+$table-head-color:                  $black;
+$table-width:                       100%;
+$table-margin-bottom:               10px;
+
+$table-head-bg:                     $light-gray;
+$table-head-border:                 2px solid $gray;
+
+$table-th-padding:                  .5em 1.2em;
+$table-th-padding-tablet:           .5em .8em;
+$table-th-weight:                   normal;
+$table-th-align:                    left;
+
+$table-body-border:                 1px solid $light-gray;
+
+$table-td-padding:                  .5em 1.2em;
+$table-td-padding-tablet:           .5em .8em;
+$table-td-align:                    left;
+
+$table-hover-bg:                    lighten($light-gray, 3%);
+
+$table-separate-cols-th-border:        1px solid $gray;
+$table-separate-cols-td-border:        1px solid $light-gray;
+
+$table-separate-cols-th-border-dark:   1px solid $yellow;
+$table-separate-cols-td-border-dark:   1px solid $white;
+
+$table-scrollbar-width:             15px;
+$table-scrollbar-height:            15px;
+$table-scrollbar-bg:                $black;
+$table-scrollbar-thumb:             $yellow;
+
+
+
+/* ======================
+15. Tabs
+=========================*/
+$tabs-item-color:                       $gray;
+$tabs-item-color-active:                $teal;
+$tabs-item-font-size:                   1em;
+$tabs-item-line-height:                 1.2;
+$tabs-item-padding:                     1em 2em;
+
+/* Nav Item */
+$tabs-item-border-color:                transparent;
+$tabs-item-border-bottom:               2px solid $tabs-item-border-color;
+$tabs-item-border-color-active:         $teal;
+$tabs-item-border-color-hover:          rgba($tabs-item-border-color-active, .5);
+$tabs-item-border-width:                1px;
+
+/* Content */
+$tabs-content-padding:                  1em 0;
+$tabs-content-color:                    $black;
+$tabs-content-font-size:                1em;
+$tabs-content-line-height:              1.4;
+
+
+
+
+/* ======================
+16. Accordion
+=========================*/
+$accordion-bg:                      $white;
+$accordion-border-color:            lighten($gray, 20%);
+$accordion-border:                  1px solid $accordion-border-color;
+
+/* Title */
+$accordion-title-padding:           .5em 2em .5em 2.1em;
+$accordion-title-font-size:         1em;
+$accordion-title-line-height:       1.2;
+$accordion-title-font-weight:       bold;
+$accordion-title-color:             $gray;
+$accordion-title-color-active:      $black;
+$accordion-title-color-hover:       $black;
+
+/* Title Icon */
+$accordion-title-icon:              "\f105";
+$accordion-title-icon-active:       "\f107";
+$accordion-title-icon-font-size:    1em;
+$accordion-title-icon-line-height:  1;
+$accordion-title-icon-top:          17px;
+$accordion-title-icon-left:         1em;
+$accordion-title-icon-zindex:       1;
+$accordion-title-icon-margin-top:   - $accordion-title-icon-font-size / 2;
+
+/* Content */
+$accordion-content-font-size:       1em;
+$accordion-content-color:           $black;
+$accordion-content-padding:         .5em 1em 1em;
+
+
+
+
+
+/* ======================
+17. Navbar
+=========================*/
+$navbar-padding:                        .45em;
+$navbar-bg:                             rgba(#000, .8);
+$navbar-height:                         50px;
+$navbar-margin-top:                     30px;
+$navbar-margin-top-xs:                  0;
+$navbar-zindex:                         1000;
+
+$navbar-left-padding-left:              60px;
+$navbar-left-padding-left-sm:           0;
+
+$navbar-wrapper-width:                  200px;
+$navbar-wrapper-height:                 100%;
+$navbar-wrapper-bg:                     rgba(0, 0, 0, .9);
+$navbar-wrapper-zindex:                 1000;
+
+/* Item */
+$navbar-item-margin-right:              5px;
+
+/* Link */
+$navbar-link-padding:                   .6em .8em;
+$navbar-link-padding-md:                .6em .5em;
+$navbar-link-font-size:                 1em;
+$navbar-link-line-height:               1;
+$navbar-link-color:                     $white;
+
+/* Text */
+$navbar-text-padding:                   .6em .3em;
+$navbar-text-font-size:                 1em;
+$navbar-text-line-height:               1;
+$navbar-text-color:                     darken($light-gray, 5%);
+
+/* Navbar mobile toggle */
+$navbar-toggle-padding:                 .5em 1.8em .6em 0;
+$navbar-toggle-pos-top:                 16px;
+$navbar-toggle-pos-right:               15px;
+$navbar-toggle-zindex:                  5px;
+
+$navbar-line-width:                     30px;
+$navbar-line-width-center:              25px;
+$navbar-line-height:                    3px;
+
+
+
+
+/* ======================
+18. Modals
+=========================*/
+$modal-max-width:           700px;
+$modal-color:               $black;
+$modal-bg:                  $white;
+$modal-margin-bottom:       10px;
+$modal-padding:             1.5em;
+
+$modal-title-size:          2.5em;
+$modal-title-color:         $black;
+$modal-title-line-height:   1.2;
+$modal-title-weight:        bold;
+$modal-title-margin:        0 0 .5em;
+
+$modal-text-size:           1em;
+$modal-text-line-height:    1.2;
+$modal-text-color:          $black;
+$modal-text-margin:         0 0 1.5em;
+
+/* Overlay */
+$modal-overlay:             rgba(#000, 0.9);
+$modal-overlay-ie:          $black;
+
+/* Animation */
+$modal-anim-duration:       .3s;
+
+/* Wrapper */
+$modal-wrapper-padding:     10px 10px 0;
+
+/* Close Btn */
+$modal-close-size:          35px;
+$modal-close-color:         $black;
+$modal-close-font-size:     1.2em;
+$modal-close-icon:          "\f00d";
+$modal-close-top:           0;
+$modal-close-right:         0;
+
+
+
+/* ======================
+19. Sortable
+=========================*/
+$sortable-sorted-bg:                    rgba($light-blue, .4);
+
+$sortable-sorted-icon-asc:              "\f106";
+$sortable-sorted-icon-desc:             "\f107";
+$sortable-sorted-icon-font-size:        1em;
+$sortable-sorted-icon-line-height:      1;
+$sortable-sorted-icon-color:            $black;
+$sortable-sorted-icon-margin-left:      10px;
+
+
+
+
+/* ======================
+20. Ads list
+=========================*/
+$ads-list-photo-width:              80px;
+
+/* Title */
+$ads-list-title-width:              250px;
+$ads-list-title-white-space:        nowrap;
+$ads-list-title-text-overflow:      ellipsis;
+
+/* Special */
+$ads-list-special-bg:               $yellow;
+$ads-list-special-weight:           bold;
+
+
+
+/* ======================
+21. Ads inner
+=========================*/
+$ads-banners-align:                 right;
+
+/* Back link */
+$ads-inner-back-link-size:          .9em;
+$ads-inner-back-link-align:         right;
+
+/* Price */
+$ads-inner-price-size:              2em;
+$ads-inner-price-color:             $red;
+$ads-inner-price-weight:            bold;
+
+/* Text */
+$ads-inner-text-margin-top:         30px;
+
+/* Footer */
+$ads-inner-footer-margin-top:       60px;
+$ads-inner-footer-color:            $gray;
+$ads-inner-footer-text-align:       right;
+
+
+
+
+/* ======================
+22. Banner
+=========================*/
+
+$banner-width:                      200px;
+$banner-margin-bottom:              40px;
+$banner-margin-bottom-xs:           20px;
+$banner-word-wrap: break-word;
+
+/* Title */
+$banner-title-margin-bottom:        5px;
+$banner-title-size:                 1.1em;
+$banner-title-line-height:          1.2;
+$banner-title-color:                $black;
+$banner-title-weight:               bold;
+$banner-title-align:                left;
+
+/* Text */
+$banner-text-size:                  1em;
+$banner-text-line-height:           1.2;
+$banner-text-color:                 $black;
+$banner-text-align:                 left;
+
+/* Price */
+$banner-price-padding:              5px 10px;
+$banner-price-bg:                   $red;
+$banner-price-size:                 1em;
+$banner-price-line-height:          1.2;
+$banner-price-color:                $white;
+$banner-price-top:                  0;
+$banner-price-right:                0;
+$banner-price-bottom:               auto;
+$banner-price-left:                 auto;
+
+
+
+
+/* ======================
+23. Filter
+=========================*/
+
+$filter-padding:                .5em .5em 0;
+$filter-background:             $light-gray;
+
+/* Inputs */
+$filter-input-margin-bottom:    .5em;
+$filter-input-width:            100px;
+$filter-input-height:           29px;
+$filter-input-font-size:        .8em;
+
+/* Slide Filter */
+$filter-mob-width:              200px;
+$filter-mob-height:             100%;
+$filter-mob-bg:                 rgba(#000, .9);
+
+$filter-close-width:            25px;
+$filter-close-height:           25px;
+$filter-close-margin-bottom:    10px;
+
+$filter-show-font-size:         1em;
+$filter-show-color:             $red;
+
+
+
+
+
+/* ======================
+24. Footer
+=========================*/
+
+$footer-padding:                1em 0;
+$footer-bg:                     $black;
+$footer-font-size:              .9em;
+$footer-text-color:             $white;
+$footer-text-align:             left;
+$footer-item-margin-right:      10px;
+$footer-item-link-color:        $white;
+
+
+
+
+
+/* ======================
+25. Header
+=========================*/
+$header-height:                         300px;
+$header-height-sm:                      150px;
+$header-margin-bottom:                  50px;
+$header-margin-bottom-lg:               30px;
+$header-margin-bottom-sm:               20px;
+
+/* Search */
+$header-search-max-width:               430px;
+$header-search-padding-horizontal:      15px;
+$header-search-pos-top:                 150px;
+$header-search-pos-top-sm:              75px;
+$header-search-input-width:             75%;
+$header-search-input-width-sm:          65%;
+$header-search-btn-width:               25%;
+$header-search-btn-width-sm:            35%;
+
+/* Profile links */
+$header-profile-font-size:              .85em;
+$header-profile-line-height:            1.4;
+$header-profile-text-color:             $white;
+$header-profile-margin-top:             3px;
+$header-profile-border-sm:              1px solid $white;
+$header-profile-item-margin-left:       15px;
+$header-profile-item-padding-sm:        .5em 0;
+
+
+
+
+
+/* ======================
+26. Login
+=========================*/
+$login-max-width:   280px;
+
+
+
+
+/* ======================
+27. Balance
+=========================*/
+$balance-max-width:         280px;
+$balance-margin-bottom:     40px;
+
+
+
+/* ======================
+28. Page
+=========================*/
+$page-padding-bottom:               130px;
+$page-padding-bottom-sm:            90px;
+
+/* Page title */
+$page-title-margin:                 0 0 20px;
+$page-title-font-size:              1.5em;
+$page-title-font-size-xs:           1.8em;
+$page-title-font-weight:            bold;
+$page-title-text-color:             $black;
+
+$page-title-after-width:            100%;
+$page-title-after-height:           3px;
+$page-title-after-margin-top:       3px;
+$page-title-after-margin-bottom:    10px;
+$page-title-after-bg:               $red;
+
+$page-text-margin-bottom:           20px;
+$page-text-font-size:               1em;
+$page-text-line-height:             1.4;
+$page-text-color:                   $black;
+
+
+
+
+/* ======================
+29. Logo
+=========================*/
+$logo-width:            80px;
+$logo-width-sm:         60px;
+$logo-pos-top:          50%;
+$logo-translatex:       -50%;
+$logo-pos-left:         -20px;
+$logo-pos-left-sm:      15px;
+$logo-zindex:           1;
+
+
+
+
+/* ======================
+30. Categories
+=========================*/
+$cat-margin-bottom:                     30px;
+$cat-title-font-size:                   1.2em;
+$cat-title-font-size-xs:                1.5em;
+$cat-title-font-padding-left-xs:        50px;
+$cat-title-line-height:                 1.4;
+$cat-title-font-weight:                 bold;
+$cat-title-text-color:                  $black;
+
+/* Title */
+$cat-title-after-width:                 80%;
+$cat-title-after-width-xs:              100%;
+$cat-title-after-height:                3px;
+$cat-title-after-margin-top:            3px;
+$cat-title-after-margin-bottom:         10px;
+$cat-title-after-bg:                    $red;
+
+$cat-inner-title-margin-bottom:         15px;
+$cat-inner-title-font-size:             1.5em;
+$cat-inner-title-line-height:           1.4;
+$cat-inner-title-weight:                bold;
+$cat-inner-title-color:                 $black;
+
+/* Icon */
+$cat-icon-pos-top:                      -5px;
+$cat-icon-pos-right:                    0;
+$cat-icon-pos-left-xs:                  0;
+
+$cat-ads-count-color:                   $green;
+
+$cat-list-item-font-size:               1em;
+$cat-list-item-font-size-xs:            1.2em;
+$cat-list-item-line-height:             1.4;
+$cat-list-item-color:                   $black;
+$cat-list-item-title-margin-top:        20px;
+
+
+
+/* ======================
+31. Slider
+=========================*/
+$slider-margin-left:        100px;
+$slider-margin-left-sm:     0;
+$slider-height-sm:          280px;
+$slider-height-xs:          auto;
+
+
+
+/* ======================
+32. Slider Thumbs
+=========================*/
+
+$thumbs-width:          80px;
+$thumbs-pos-top:        0;
+$thumbs-pos-left:       15px;
+
+
+
+/* ======================
+33. Images Upload
+=========================*/
+$upload-width:                  100%;
+$upload-height:                 150px;
+$upload-border:                 2px dashed $cyan;
+$upload-bg-color:               lighten($cyan, 60%);
+$upload-bg-color-hover:         lighten($cyan, 55%);
+
+$upload-text-font-size:         .8em;
+$upload-text-line-height:       1.4;
+$upload-text-text-align:        center;
+$upload-text-text-color:        $black;
+
+
+
+
+/* ======================
+34. Bootstrap 4 Grid
+=========================*/
+
+$enable-grid-classes:       true !default;
+$enable-flex:               false !default;
+
+@mixin _assert-ascending($map, $map-name) {
+  $prev-key: null;
+  $prev-num: null;
+  @each $key, $num in $map {
+    @if $prev-num == null {
+      // Do nothing
+    } @else if not comparable($prev-num, $num) {
+      @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+    } @else if $prev-num >= $num {
+      @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+    }
+    $prev-key: $key;
+    $prev-num: $num;
+  }
+}
+
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12 !default;
+$grid-gutter-width-base:     30px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;

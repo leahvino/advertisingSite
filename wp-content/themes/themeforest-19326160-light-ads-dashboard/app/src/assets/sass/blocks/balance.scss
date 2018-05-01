@@ -1,0 +1,16 @@
+.balance {
+    width: 100%;
+    max-width: $balance-max-width;
+    margin: 0 auto $balance-margin-bottom;
+
+    .input__wrapper {
+
+        .btn {
+            margin-right: 15px;
+        }
+
+        .checkbox {
+            margin-bottom: 0;
+        }
+    }
+}

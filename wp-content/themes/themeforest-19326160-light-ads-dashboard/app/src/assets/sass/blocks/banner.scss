@@ -1,0 +1,44 @@
+.banner {
+    display: inline-block;
+    width: $banner-width;
+    margin-bottom: $banner-margin-bottom;
+    word-wrap: $banner-word-wrap;
+    position: relative;
+
+    @media #{$media-xs} {
+        margin-bottom: $banner-margin-bottom-xs;
+    }
+}
+
+.banner__title {
+    margin-bottom: $banner-title-margin-bottom;
+
+    font-size: $banner-title-size;
+    line-height: $banner-title-line-height;
+    color: $banner-title-color;
+    font-weight: $banner-title-weight;
+    text-align: $banner-title-align;
+}
+
+.banner__text {
+    font-size: $banner-text-size;
+    line-height: $banner-text-line-height;
+    color: $banner-text-color;
+    text-align: $banner-text-align;
+}
+
+.banner__price {
+    padding: $banner-price-padding;
+
+    background-color: $banner-price-bg;
+    font-size: $banner-price-size;
+    line-height: $banner-price-line-height;
+    color: $banner-price-color;
+
+    position: absolute;
+    top: $banner-price-top;
+    right: $banner-price-right;
+    bottom: $banner-price-bottom;
+    left: $banner-price-left;
+    z-index: 1;
+}

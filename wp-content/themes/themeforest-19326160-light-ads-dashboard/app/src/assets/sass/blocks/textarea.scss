@@ -1,0 +1,41 @@
+.textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: $textarea-height;
+    padding: $textarea-padding;
+
+    font-size: $input-font-size;
+    line-height: $textarea-line-height;
+    font-family: inherit;
+    color: $textarea-color;
+
+    border: 0;
+    border-radius: 0;
+    box-shadow: $input-shadow-default;
+    background-color: $input-bg;
+    resize: $textarea-resize;
+
+    transition: background-color .1s linear;
+    -webkit-appearance: none;
+
+    &:focus {
+        background-color: $input-bg-focus;
+        outline: 0;
+        resize: $textarea-resize-focus;
+    }
+
+    &::placeholder {
+        color: $input-placeholder-color;
+    }
+
+    /* States */
+    &--error {
+        @include input-state($input-error);
+    }
+
+    &--success {
+        @include input-state($input-success);
+    }
+}
+

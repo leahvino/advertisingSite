@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicons for all devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/i/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/i/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/i/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/i/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Light Ads Dashboard</title>
+</head>
+<body>
+
+
+<div class="page">
+
+    <!-- Header -->
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a class="navbar__toggle" href="#" id="js-nav-burger">
+                            <span></span>
+                        </a>
+                        <a class="logo" href="index.html">
+                            <img class="img" src="assets/i/ads-logo.jpg" width="80" height="35" alt="Ads Dashboard">
+                        </a>
+                        <div class="navbar__wrapper" id="js-nav">
+                            <div class="header__profile">
+                                <div class="header__profile-item"><a href="balance.html"><i class="fa fa-credit-card"></i>Balance: $20</a></div>
+                                <div class="header__profile-item"><a href="profile.html"><i class="fa fa-user"></i>Simon Smith</a></div>
+                            </div>
+    
+                            <ul class="navbar__nav  navbar__nav--left" role="menubar">
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="add_ads.html" itemprop="url">add new advert</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="my_ads.html" itemprop="url">My ads</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="banner_list.html" itemprop="url">My banners</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="search.html" itemprop="url">Extend Search</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="pages.html" itemprop="url">Pages</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar__nav  navbar__nav--right" role="menubar">
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="#" data-toggle="modal" data-target="#logout_modal" role="button">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </div><!-- /.row -->
+    
+        </div><!-- /.container -->
+    
+        <div class="header__intro">
+            <form class="header__search" action="/" method="post">
+                <input class="input" type="text" placeholder="Keyword + enter">
+                <button class="btn  btn--red" type="submit">Search</button>
+            </form>
+        </div>
+    </header><!-- /.header -->
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="row">
+            <div class="col-lg-10  col-md-8">
+                <div class="cat__inner-title">Cars</div>
+            </div>
+            <div class="col-lg-2  col-md-4">
+                <div class="select">
+                    <select name="sort" id="sort">
+                        <option value="all" selected>All</option>
+                        <option value="today">Today (1215)</option>
+                        <option value="yesterday">Yesterday (1698)</option>
+                    </select>
+                </div>
+            </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- Filter -->
+                <div class="filter" id="filter">
+                    <button class="filter__close" type="button" id="filter_close">Close filter</button>
+                
+                    <form class="form--inline" action="/" method="post">
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <input class="input" type="text" placeholder="Price from">
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <input class="input" type="text" placeholder="Price to">
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select">
+                                    <select name="year_from" id="year_from">
+                                        <option value="0" selected>Year from</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select">
+                                    <select name="year_to" id="year_to">
+                                        <option value="0" selected>Year to</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select">
+                                    <select name="capacity_from" id="capacity_from">
+                                        <option value="0" selected>Capacity from</option>
+                                        <option value="6.0">6.0</option>
+                                        <option value="5.0">5.0</option>
+                                        <option value="4.0">4.0</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select">
+                                    <select name="capacity_to" id="capacity_to">
+                                        <option value="0" selected>Capacity to</option>
+                                        <option value="6.0">6.0</option>
+                                        <option value="5.0">5.0</option>
+                                        <option value="4.0">4.0</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select  select--sm">
+                                    <select name="engine" id="engine">
+                                        <option value="0" selected>Engine</option>
+                                        <option value="diesel">Diesel</option>
+                                        <option value="petrol">Petrol</option>
+                                        <option value="gas">Gas</option>
+                                        <option value="electric">Electric</option>
+                                        <option value="hybrid">Hybrid (petrol/electric)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select  select--sm">
+                                    <select name="gearbox" id="gearbox">
+                                        <option value="0" selected>Gearbox</option>
+                                        <option value="mechanic">Mechanic</option>
+                                        <option value="automatical">Automatical</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select  select--sm">
+                                    <select name="vehicle_type" id="vehicle_type">
+                                        <option value="0" selected>Type</option>
+                                        <option value="Saloon">Saloon</option>
+                                        <option value="Estate">Estate</option>
+                                        <option value="Cabriolet">Cabriolet</option>
+                                        <option value="Coupe">Coupe</option>
+                                        <option value="Minibus">Minibus</option>
+                                        <option value="Small">Small</option>
+                                        <option value="Pickup">Pickup</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="input__wrapper">
+                                <div class="select  select--sm">
+                                    <select name="color" id="color">
+                                        <option value="0" selected>Color</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Black">Black</option>
+                                        <option value="Yellow">Yellow</option>
+                                        <option value="Brown">Brown</option>
+                                        <option value="Gray">Gray</option>
+                                        <option value="Blue">Blue</option>
+                                        <option value="Orange">Orange</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <button class="btn  btn--red  btn--s" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div><!-- /.filter -->
+
+                <a class="filter__show" href="#" id="js-show-filter"><i class="fa fa-bars"></i>Show filter</a>
+
+            </div><!-- /.col-xs-12 -->
+        </div><!-- /.row -->
+
+        <div class="row  subcat">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Alfa Romeo <span class="cat__ads-count">(654)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Audi <span class="cat__ads-count">(7562)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">BMW  <span class="cat__ads-count">(3243)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Cadillac  <span class="cat__ads-count">(124)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Chevrolet <span class="cat__ads-count">(321)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Chrysler <span class="cat__ads-count">(356)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Citroen  <span class="cat__ads-count">(642)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Dacia <span class="cat__ads-count">(112)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Daewoo <span class="cat__ads-count">(12)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Daihatsu <span class="cat__ads-count">(31)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Dodge <span class="cat__ads-count">(4212)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Fiat <span class="cat__ads-count">(3542)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Ford <span class="cat__ads-count">(8742)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Honda <span class="cat__ads-count">(1242)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Hummer <span class="cat__ads-count">(65)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Hyundai <span class="cat__ads-count">(65)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Infiniti <span class="cat__ads-count">(421)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Isuzu <span class="cat__ads-count">(128)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Jaguar <span class="cat__ads-count">(412)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Jeep <span class="cat__ads-count">(872)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Kia <span class="cat__ads-count">(12374)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Lancia <span class="cat__ads-count">(2136)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Land Rover <span class="cat__ads-count">(345)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Lexus <span class="cat__ads-count">(7641)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Lincoln <span class="cat__ads-count">(311)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mazda <span class="cat__ads-count">(8532)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mercedes <span class="cat__ads-count">(7541)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mini Cooper <span class="cat__ads-count">(4121)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Mitsubishi <span class="cat__ads-count">(4531)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Nissan <span class="cat__ads-count">(1243)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Opel <span class="cat__ads-count">(4512)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Peugeot <span class="cat__ads-count">(5212)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Pontiac <span class="cat__ads-count">(753)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Porsche <span class="cat__ads-count">(1231)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Renault <span class="cat__ads-count">(6531)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Rover <span class="cat__ads-count">(864)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Saab <span class="cat__ads-count">(432)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Seat <span class="cat__ads-count">(872)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Skoda <span class="cat__ads-count">(12374)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Smart <span class="cat__ads-count">(2136)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">SsangYong <span class="cat__ads-count">(345)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Subaru <span class="cat__ads-count">(7641)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Suzuki <span class="cat__ads-count">(311)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Toyota <span class="cat__ads-count">(8532)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Volkswagen <span class="cat__ads-count">(7541)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Volvo <span class="cat__ads-count">(4121)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="cat__list  inner">
+                            <li class="cat__list-item  cat__list-item--title">
+                                <b>Rare cars</b>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Retro cars <span class="cat__ads-count">(120)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Sports cars <span class="cat__ads-count">(321)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Tuned cars <span class="cat__ads-count">(431)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Exclusive cars <span class="cat__ads-count">(31)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Electric vehicles <span class="cat__ads-count">(541)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Other brands <span class="cat__ads-count">(148)</span></a>
+                            </li>
+                            <li class="cat__list-item  cat__list-item--title">
+                                <b>Exchange</b>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Exchange of cars <span class="cat__ads-count">(142)</span></a>
+                            </li>
+                            <li class="cat__list-item  cat__list-item--title">
+                                <b>Other</b>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Repair, maintenance <span class="cat__ads-count">(5431)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Towing <span class="cat__ads-count">(487)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Car rent <span class="cat__ads-count">(1567)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Parts and accessories <span class="cat__ads-count">(15341)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Trailers <span class="cat__ads-count">(2123)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">With defects or after crash <span class="cat__ads-count">(4721)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Services for disabled <span class="cat__ads-count">(9812)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Tuning <span class="cat__ads-count">(1411)</span></a>
+                            </li>
+                            <li class="cat__list-item">
+                                <a href="ads_list.html">Tires <span class="cat__ads-count">(1264)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.col-lg-9 -->
+
+            <div class="col-lg-3">
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200" width="200" height="200" alt=""></a>
+                        <div class="banner__price">$12300</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200" width="200" height="200" alt=""></a>
+                        <div class="banner__price">$10000</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="container">
+    
+            <ul class="footer__list footer__list--inline">
+                <li class="footer__list-item">
+                    <a href="rules.html">Rules &amp; conditions</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="contacts.html">Contact Us</a>
+                </li>
+                <li class="footer__list-item">
+                    &copy; 2016 AdsDashboard.com
+                </li>
+            </ul>
+    
+        </div>
+    </footer>
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+<div class="remodal" id="logout_modal" role="dialog">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h3 class="remodal__title">Logout?</h3>
+    <div class="remodal__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <button data-remodal-action="cancel" class="btn  btn--deep-orange">Cancel</button>
+    <button data-remodal-action="confirm" class="btn  btn--green">OK</button>
+</div>
+
+
+
+<!-- JS -->
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

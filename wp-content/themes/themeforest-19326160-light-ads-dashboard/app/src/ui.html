@@ -1,0 +1,402 @@
+//= templates/head.html
+
+<style>
+    .example {
+        background: #fff;
+        padding: 10px;
+    }
+
+    .example--dark {
+        padding: 10px;
+        background-color: #000;
+    }
+</style>
+
+
+<div class="container">
+
+    <h4>Alerts</h4>
+    <div class="example">
+        <div class="alert  alert--green">
+            <p>Alert message...</p>
+            <button class="alert__button" type="button"><i class="fa fa-close"></i></button>
+        </div>
+
+        <div class="alert  alert--red">
+            <p>Alert message...</p>
+            <button class="alert__button" type="button"><i class="fa fa-close"></i></button>
+        </div>
+
+        <div class="alert  alert--teal">
+            <p>Alert message...</p>
+            <button class="alert__button" type="button"><i class="fa fa-close"></i></button>
+        </div>
+
+        <h4>All Colors</h4>
+        <div>*--gray, *--red, *--pink, *--purple, *--deep-purple, *--indigo, *--blue, *--light-blue, *--cyan, *--teal, *--green, *--light-green, *--lime, *--yellow, *--amber, *--orange, *--deep-orange, *--brown, *--black</div>
+    </div>
+
+    <h4>Breadcrumbs</h4>
+    <div class="example">
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__item">Home</a>
+            <a href="#" class="breadcrumbs__item">Page</a>
+            <span class="breadcrumbs__item  current">Current page</span>
+        </div>
+
+        <div class="breadcrumbs  breadcrumbs--arrow">
+            <a href="#" class="breadcrumbs__item">Home</a>
+            <a href="#" class="breadcrumbs__item">Page</a>
+            <span class="breadcrumbs__item  current">Current page</span>
+        </div>
+    </div>
+
+
+
+    <h4>Buttons</h4>
+    <div class="example">
+        <a class="btn" href="#">Button</a>
+        <button class="btn" type="button">Button</button>
+        <input class="btn" type="submit" value="Button">
+    </div>
+
+    <div class="example">
+        <a class="btn  btn--xs" href="#">XS button</a>
+        <a class="btn  btn--s" href="#">S button</a>
+        <a class="btn" href="#">default button</a>
+        <a class="btn  btn--m" href="#">M button</a>
+        <a class="btn  btn--l" href="#">L button</a>
+        <a class="btn  btn--xl" href="#">XL button</a>
+        <a class="btn  btn--xxl" href="#">XXL button</a>
+    </div>
+
+    <div class="example">
+        <a class="btn btn--icon-before" href="#"><i class="fa fa-cloud"></i>Button</a>
+        <a class="btn btn--icon-after" href="#">Button<i class="fa fa-cloud"></i></a>
+    </div>
+
+    <div class="example">
+        <a class="btn  btn--gray" href="#">Gray</a>
+        <a class="btn  btn--red" href="#">Red</a>
+        <a class="btn  btn--pink" href="#">Pink</a>
+        <a class="btn  btn--purple" href="#">Purple</a>
+        <a class="btn  btn--deep-purple" href="#">Deep Purple</a>
+        <a class="btn  btn--indigo" href="#">Indigo</a>
+        <a class="btn  btn--blue" href="#">Blue</a>
+        <a class="btn  btn--light-blue" href="#">Light Blue</a>
+        <a class="btn  btn--cyan" href="#">Cyan</a>
+        <a class="btn  btn--teal" href="#">Teal</a>
+        <a class="btn  btn--green" href="#">Green</a>
+        <a class="btn  btn--light-green" href="#">Light Green</a>
+        <a class="btn  btn--lime" href="#">Lime</a>
+        <a class="btn  btn--yellow" href="#">Yellow</a>
+        <a class="btn  btn--amber" href="#">Amber</a>
+        <a class="btn  btn--orange" href="#">Orange</a>
+        <a class="btn  btn--deep-orange" href="#">Deep Orange</a>
+        <a class="btn  btn--brown" href="#">Brown</a>
+        <a class="btn  btn--black" href="#">Black</a>
+    </div>
+
+
+    <h4>Checkboxes</h4>
+    <div class="example">
+        <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="checkbox_1" id="checkbox_1" checked>
+            <label class="checkbox__label" for="checkbox_1">
+                I agree with terms
+            </label>
+        </div>
+        <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="checkbox_3" id="checkbox_3">
+            <label class="checkbox__label  checkbox__label--error" for="checkbox_3">
+                Error checkbox
+            </label>
+        </div>
+        <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="checkbox_4" id="checkbox_4" disabled>
+            <label class="checkbox__label  checkbox__label--disabled" for="checkbox_4">
+                Disabled checkbox
+            </label>
+        </div>
+    </div>
+
+
+
+    <h4>Icons</h4>
+    <p><a href="http://fontawesome.io/icons/" target="_blank">All Icons and documentation</a></p>
+    <div class="example">
+        <i class="fa  fa-user"></i>
+        <i class="fa  fa-download"></i>
+        <i class="fa  fa-diamond"></i>
+        <i class="fa  fa-credit-card"></i>
+        <i class="fa  fa-coffee"></i>
+        <i class="fa  fa-comment"></i>
+        <i class="fa  fa-search"></i>
+    </div>
+
+
+
+    <h4>Selects</h4>
+    <div class="example">
+
+        <div class="form__group">
+            <div class="select">
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form__group">
+            <div class="select  select--multiple">
+                <select multiple>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form__group">
+            <div class="select  select--error">
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form__group">
+            <div class="select  select--success">
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h4>Inputs and labels</h4>
+    <div class="example">
+        <div class="form__group">
+            <label class="label" for="input_1">Input Label</label>
+            <input class="input  input--block" type="text" id="input_1" placeholder="Full width input">
+            <div class="form__hint">Example: Some hint for input</div>
+        </div>
+
+        <div class="form__group">
+            <div class="input__wrapper  input__wrapper--label">
+                <label class="label" for="input_2">Input Label</label>
+                <input class="input" type="text" id="input_2" placeholder="Inline label + input">
+            </div>
+        </div>
+
+        <div class="form__group">
+            <input class="input  input--error" type="text" placeholder="Error">
+        </div>
+        <div class="form__group">
+            <input class="input  input--success" type="text" placeholder="Success">
+        </div>
+
+        <div class="form__group">
+            <input class="input  input--slide" type="text" placeholder="Placeholder slide">
+        </div>
+        <div class="form__group">
+            <input class="input  input--fade" type="text" placeholder="Placeholder fade">
+        </div>
+
+        <div class="form__group">
+            <div class="input__wrapper  input__wrapper--label">
+                <label class="input__label" for="username"><i class="fa fa-user"></i></label>
+                <input class="input" type="text" placeholder="Username" id="username">
+            </div>
+        </div>
+        <div class="form__group">
+            <div class="input__wrapper  input__wrapper--label">
+                <label class="input__label" for="password"><i class="fa fa-lock"></i></label>
+                <input class="input" type="password" placeholder="Password" id="password">
+            </div>
+        </div>
+        <div class="form__group">
+            <div class="input__wrapper  input__wrapper--label">
+                <label class="input__label" for="sum">$</label>
+                <input class="input" type="text" placeholder="Sum" id="sum">
+                <span class="input__label">.00</span>
+            </div>
+        </div>
+
+        <form class="form--inline" action="/" method="post">
+            <div class="form__group">
+                <div class="input__wrapper  input__wrapper--icon-before">
+                    <input class="input" type="text" placeholder="Username">
+                    <i class="input__icon  fa fa-user"></i>
+                </div>
+            </div>
+            <div class="form__group">
+                <div class="input__wrapper  input__wrapper--icon-before">
+                    <input class="input" type="password" placeholder="Password">
+                    <i class="input__icon  fa fa-lock"></i>
+                </div>
+            </div>
+            <div class="form__group">
+                <button class="btn  btn--orange" type="submit">Send</button>
+            </div>
+        </form>
+
+        <form class="form--inline" action="/" method="post">
+            <div class="form__group">
+                <div class="input__wrapper  input__wrapper--icon-after">
+                    <input class="input" type="text" placeholder="Username">
+                    <i class="input__icon  fa fa-user"></i>
+                </div>
+            </div>
+            <div class="form__group">
+                <div class="input__wrapper  input__wrapper--icon-after">
+                    <input class="input" type="password" placeholder="Password">
+                    <i class="input__icon  fa fa-lock"></i>
+                </div>
+            </div>
+            <div class="form__group">
+                <button class="btn  btn--orange" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <h4>Textarea</h4>
+    <div class="example">
+        <div class="form__group">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea class="textarea  textarea--error" placeholder="Error textarea"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea class="textarea  textarea--success" placeholder="Success textarea"></textarea>
+        </div>
+    </div>
+
+
+
+    <h4>Radio</h4>
+    <div class="example">
+        <div class="radio">
+            <input class="radio__input" type="radio" name="radio_group_1" id="radio_1" checked>
+            <label class="radio__label" for="radio_1">
+                Radio 1
+            </label>
+        </div>
+        <div class="radio">
+            <input class="radio__input" type="radio" name="radio_group_1" id="radio_2">
+            <label class="radio__label" for="radio_2">
+                Radio 2
+            </label>
+        </div>
+        <div class="radio">
+            <input class="radio__input" type="radio" name="radio_group_1" id="radio_3">
+            <label class="radio__label  radio__label--error" for="radio_3">
+                Error Radio
+            </label>
+        </div>
+        <div class="radio">
+            <input class="radio__input" type="radio" name="radio_group_1" id="radio_3" disabled>
+            <label class="radio__label  radio__label--disabled" for="radio_3">
+                Disabled Radio
+            </label>
+        </div>
+    </div>
+
+
+    <h4>Lists</h4>
+    <div class="example">
+        <ul class="list">
+            <li class="list__item">
+                <i class="fa  fa-user"></i>
+                Simon Smith
+            </li>
+            <li class="list__item">
+                <i class="fa  fa-link"></i>
+                <a href="#">website.com</a>
+            </li>
+            <li class="list__item">
+                <i class="fa  fa-envelope-o"></i>
+                <a href="#">simon@mail.com</a>
+            </li>
+            <li class="list__item">
+                <i class="fa  fa-map-marker"></i>
+                Address
+            </li>
+        </ul>
+    </div>
+
+
+    <h4>Pagination</h4>
+    <div class="example">
+        <div class="pagination">
+            <a href="#" class="pagination__item  pagination__item--disabled" aria-label="Previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="#" class="pagination__item  pagination__item--current">1</a>
+            <a href="#" class="pagination__item">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item" aria-label="Next"><i class="fa fa-angle-double-right"></i></a>
+        </div>
+    </div>
+
+
+    <h4>Tables</h4>
+    <div class="example">
+        <div class="table__wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Simon</td>
+                        <td>simon@mail.com</td>
+                        <td>Activated</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table__wrapper">
+            <table class="table  table--hover">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Simon</td>
+                        <td>simon@mail.com</td>
+                        <td>Activated</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+
+<!-- JS -->
+//= templates/end.html

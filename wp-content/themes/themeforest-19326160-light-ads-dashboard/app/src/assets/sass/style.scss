@@ -1,0 +1,97 @@
+@import "variables";
+@import "mixins";
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: $roboto_c;
+    font-size: $regular_font_size;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: #fafafa;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: 0;
+        text-decoration: underline;
+    }
+}
+
+p {
+    margin: 0 0 .5em;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Vendor libs
+==========================*/
+@import "vendor/_normalize";
+@import "fontawesome/font-awesome";
+@import "vendor/slick";
+@import "vendor/sortable";
+@import "vendor/modal";
+
+
+
+/* Import blocks
+==========================*/
+@import "blocks/grid";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/page";
+@import "blocks/content";
+@import "blocks/cat";
+@import "blocks/filter";
+@import "blocks/ads";
+@import "blocks/ads-list";
+@import "blocks/slider";
+@import "blocks/thumbs";
+@import "blocks/login";
+@import "blocks/banner";
+@import "blocks/card";
+@import "blocks/subcat";
+@import "blocks/upload";
+@import "blocks/form";
+@import "blocks/checkbox";
+@import "blocks/radio";
+@import "blocks/btn";
+@import "blocks/dropdown";
+@import "blocks/input";
+@import "blocks/textarea";
+@import "blocks/label";
+@import "blocks/breadcrumbs";
+@import "blocks/balance";
+@import "blocks/pagination";
+@import "blocks/alert";
+@import "blocks/list";
+@import "blocks/select";
+@import "blocks/table";
+@import "blocks/tabs";
+@import "blocks/accordion";
+@import "blocks/navbar";
+@import "blocks/footer";
+
+
+
+
+/* Helpers (must be as last import to override rules when use)
+==========================*/
+@import "_helpers";
+

@@ -1,0 +1,23 @@
+.slider {
+    margin-left: $slider-margin-left;
+    overflow: hidden;
+
+    @media #{$media-sm} {
+        height: $slider-height-sm;
+        margin-left: $slider-margin-left-sm;
+    }
+
+    @media #{$media-xs} {
+        height: $slider-height-xs;
+    }
+}
+
+.slick-slide {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.slick-current {
+    z-index: 2;
+}

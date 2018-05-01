@@ -1,0 +1,16 @@
+.thumbs {
+    width: $thumbs-width;
+
+    position: absolute;
+    top: $thumbs-pos-top;
+    left: $thumbs-pos-left;
+    z-index: 1;
+
+    .slick-slide {
+        cursor: pointer;
+    }
+
+    @media #{$media-sm} {
+        display: none;
+    }
+}

@@ -1,0 +1,99 @@
+.filter {
+    padding: $filter-padding;
+
+    background-color: $light-gray;
+
+    .input {
+        margin-bottom: $filter-input-margin-bottom;
+        width: $filter-input-width;
+        height: $filter-input-height;
+        min-height: 0;
+
+        font-size: $filter-input-font-size;
+    }
+
+    .select {
+        height: $filter-input-height;
+        margin-bottom: $filter-input-margin-bottom;
+        font-size: $filter-input-font-size;
+    }
+
+    .btn {
+        margin-bottom: $filter-input-margin-bottom;
+    }
+
+    @media #{$media-md} {
+        width: $filter-mob-width;
+        min-height: $filter-mob-height;
+        overflow: auto;
+
+        background-color: $filter-mob-bg;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform .2s linear;
+
+        .input,
+        .select,
+        .btn,
+        .form__group {
+            display: block;
+            width: 100%;
+
+            font-size: 1em;
+        }
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+}
+
+.filter__close {
+    width: $filter-close-width;
+    height: $filter-close-height;
+    margin-bottom: $filter-close-margin-bottom;
+
+    border: 0;
+    background: url("#{$img}close-button.svg") center no-repeat;
+    background-size: 25px auto;
+
+    font-size: 0;
+    color: transparent;
+
+    display: none;
+
+    &:focus {
+        outline: 0;
+    }
+
+
+    @media #{$media-md} {
+        display: block;
+    }
+}
+
+.filter__show {
+    font-size: $filter-show-font-size;
+    color: $filter-show-color;
+
+    display: none;
+
+    i {
+        margin-right: 5px;
+    }
+
+    @media #{$media-md} {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    @media #{$media-sm} {
+        padding-top: 20px;
+    }
+}

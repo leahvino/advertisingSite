@@ -1,0 +1,16 @@
+.login {
+    width: 100%;
+    max-width: $login-max-width;
+    margin: 0 auto;
+
+    .input__wrapper {
+
+        .btn {
+            margin-right: 15px;
+        }
+
+        .checkbox {
+            margin-bottom: 0;
+        }
+    }
+}

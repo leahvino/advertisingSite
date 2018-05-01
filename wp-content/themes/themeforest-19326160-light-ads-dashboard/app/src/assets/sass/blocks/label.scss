@@ -1,0 +1,17 @@
+.label {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: $label-margin-right;
+    margin-bottom: $label-margin-bottom;
+
+    font-size: $label-font-size;
+    line-height: $label-line-height;
+    color: $label-color;
+    cursor: pointer;
+    font-weight: $label-weight;
+
+    span {
+        font-weight: $label-span-weight;
+    }
+
+}

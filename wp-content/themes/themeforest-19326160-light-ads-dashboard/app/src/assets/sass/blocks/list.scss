@@ -1,0 +1,26 @@
+.list {
+    margin: $block-margin;
+    padding: 0;
+
+    list-style: none;
+
+    font-size: $list-font-size;
+    line-height: $list-line-height;
+    color: $list-color;
+    text-align: $list-align;
+}
+
+.list__item {
+    margin-bottom: $list-item-margin-bottom;
+    position: relative;
+
+    &:last-child { margin-bottom: 0; }
+}
+
+.list__title {
+    font-weight: $list-title-weight;
+}
+
+.list__text {
+    color: $list-item-text;
+}

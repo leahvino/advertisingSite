@@ -1,0 +1,98 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="balance">
+            <form action="/" method="post">
+                <div class="form__group text-center">
+                    <h3>Your Balance: $20</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="form__group">
+                    <input class="input" type="text" name="email_phone" id="email_phone" placeholder="Add funds">
+                </div>
+                <div class="form__group">
+                    <button class="btn  btn--red  btn--full" type="submit">Go to checkout</button>
+                </div>
+            </form>
+        </div><!-- /.balance -->
+
+        <h3>Payments history</h3>
+
+        <div class="table__wrapper">
+            <table class="table  sortable" data-sortable>
+                <thead>
+                    <tr>
+                        <th data-sorted="true" data-sorted-direction="descending">№</th>
+                        <th data-sortable="false">Operation</th>
+                        <th>Sum</th>
+                        <th>Date</th>
+                        <th class="actions" data-sortable="false">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Deposit</td>
+                        <td class="text-green">+$10</td>
+                        <td>10.12.2016</td>
+                        <td class="actions">
+                            <button class="btn  btn--xs  btn--green">Save PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>New add</td>
+                        <td class="text-red">-$5</td>
+                        <td>20.12.2016</td>
+                        <td class="actions">
+                            <button class="btn  btn--xs  btn--green">Save PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>New banner</td>
+                        <td class="text-red">-$3</td>
+                        <td>25.12.2016</td>
+                        <td class="actions">
+                            <button class="btn  btn--xs  btn--green">Save PDF</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <a href="#" class="pagination__item  pagination__item--disabled" aria-label="Previous"><i class="fa fa-angle-double-left"></i></a>
+                <a href="#" class="pagination__item  pagination__item--current">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item" aria-label="Next"><i class="fa fa-angle-double-right"></i></a>
+            </div>
+        </div><!-- /.table__wrapper -->
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+
+<!-- JS -->
+//= templates/end.html

@@ -1,0 +1,27 @@
+/* Default Buttons
+============================*/
+@mixin btn {
+    @each $color in $colors {
+        &--#{nth($color, 1)} {
+            background-color: nth($color, 2);
+
+            &:focus {
+                background-color: darken(nth($color, 2), 3%);
+            }
+
+            &:hover {
+                background-color: darken(nth($color, 2), 5%);
+            }
+
+            &:active {
+                background-color: darken(nth($color, 2), 7%);
+            }
+
+            @if (lightness(nth($color, 2)) > 65) {
+                color: $black;
+            } @else {
+                color: $white;
+            }
+        }
+    }
+}

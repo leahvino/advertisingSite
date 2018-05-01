@@ -1,0 +1,125 @@
+.table__wrapper {
+    margin-top: 30px;
+    min-height: .01%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        background-color: $table-scrollbar-bg;
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:vertical {
+        background-color: $table-scrollbar-bg;
+        width: $table-scrollbar-width;
+    }
+
+    &::-webkit-scrollbar:horizontal {
+        background-color: $table-scrollbar-bg;
+        height: $table-scrollbar-height;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $table-scrollbar-thumb;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $table-scrollbar-bg;
+    }
+
+    @media #{$media-md} {
+        margin-top: 15px;
+    }
+}
+
+.table {
+    border-collapse: collapse;
+    width: $table-width;
+    margin-bottom: $table-margin-bottom;
+
+    font-size: $table-font-size;
+    line-height: $table-line-height;
+    color: $table-color;
+
+    .btn {
+        margin-bottom: 0;
+    }
+
+
+    /* Table Head */
+    thead {
+        tr {
+            background-color: $table-head-bg;
+            border-bottom: $table-head-border;
+        }
+    }
+
+    th {
+        padding: $table-th-padding;
+
+        color: $table-head-color;
+        font-weight: $table-th-weight;
+        text-align: $table-th-align;
+
+        &.actions {
+            padding-right: 22px;
+            text-align: right;
+        }
+
+        @media #{$media-md} {
+            padding: $table-th-padding-tablet;
+        }
+    }
+
+
+    /* Table Body */
+    tbody {
+        tr {
+            border-bottom: $table-body-border;
+        }
+    }
+
+    td {
+        padding: $table-td-padding;
+        text-align: $table-td-align;
+
+        &.actions {
+            text-align: right;
+
+            .btn {
+                width: 70px;
+                margin: 2px;
+                white-space: nowrap;
+            }
+        }
+
+        @media #{$media-md} {
+            padding: $table-td-padding-tablet;
+        }
+    }
+
+
+
+    /* Styling */
+
+    &--hover {
+        tbody tr {
+            transition: background-color .1s linear;
+
+            &:hover {
+                background-color: $table-hover-bg;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--separate-cols {
+        th {
+            border: $table-separate-cols-th-border;
+        }
+
+        td {
+            border: $table-separate-cols-td-border;
+        }
+    }
+
+}

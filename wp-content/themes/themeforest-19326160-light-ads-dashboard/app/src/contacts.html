@@ -1,0 +1,64 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+       <h1 class="page__title">Contact Us</h1>
+       <p class="page__text">Maybe you can find answer <a href="faq.html">here</a></p>
+
+       <div class="row">
+            <form action="/" method="post">
+                <div class="col-lg-4">
+                    <div class="form__group">
+                        <label class="label" for="subject">Subject</label>
+                        <input class="input" type="text" name="subject" id="subject" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="name">Your name</label>
+                        <input class="input" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="email">Your email</label>
+                        <input class="input" type="email" name="email" id="email" required>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-8">
+                    <div class="form__group">
+                        <label class="label" for="text">Text*</label>
+                        <textarea class="textarea" name="text" id="text" required></textarea>
+                    </div>
+                    <div class="form__group">
+                        <div class="row">
+                            <div class="col-lg-4  offset-lg-8">
+                                <button class="btn  btn--green  btn--full" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

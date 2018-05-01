@@ -1,0 +1,101 @@
+.header {
+    height: $header-height;
+    margin-bottom: $header-margin-bottom;
+    position: relative;
+
+    @media #{$media-lg} {
+        margin-bottom: $header-margin-bottom-lg;
+    }
+
+    @media #{$media-sm} {
+        height: $header-height-sm;
+        margin-bottom: $header-margin-bottom-sm;
+    }
+}
+
+.header__intro {
+    width: 100%;
+    height: 100%;
+
+    background: url("http://placehold.it/1980x300/333") center no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__search {
+    width: 100%;
+    max-width: $header-search-max-width;
+    padding-left: $header-search-padding-horizontal;
+    padding-right: $header-search-padding-horizontal;
+
+    position: absolute;
+    top: $header-search-pos-top;
+    left: 50%;
+    z-index: 2;
+
+    transform: translateX(-50%);
+
+    @include clearfix;
+
+    .input {
+        width: $header-search-input-width;
+        float: left;
+    }
+
+    .btn {
+        float: left;
+        width: $header-search-btn-width;
+    }
+
+    @media #{$media-sm} {
+        top: $header-search-pos-top-sm;
+
+        .input {
+            width: $header-search-input-width-sm;
+        }
+
+        .btn {
+            width: $header-search-btn-width-sm;
+        }
+    }
+}
+
+.header__profile {
+    font-size: $header-profile-font-size;
+    line-height: $header-profile-line-height;
+    color: $header-profile-text-color;
+
+    margin-top: $header-profile-margin-top;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    z-index: 1;
+
+    @media #{$media-sm} {
+        position: static;
+        border-bottom: $header-profile-border-sm;
+    }
+}
+
+.header__profile-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: $header-profile-item-margin-left;
+
+    a {
+        color: $header-profile-text-color;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+
+    @media #{$media-sm} {
+        display: block;
+        padding: $header-profile-item-padding-sm;
+    }
+}
+

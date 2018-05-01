@@ -1,0 +1,46 @@
+.page {
+    min-height: 100%;
+    padding-bottom: $page-padding-bottom;
+
+    position: relative;
+
+    @media #{$media-sm} {
+        padding-bottom: $page-padding-bottom-sm;
+    }
+}
+
+.page__title {
+    margin: $page-title-margin;
+    position: relative;
+
+    font-size: $page-title-font-size;
+    font-weight: $page-title-font-weight;
+    color: $page-title-text-color;
+
+    &:after {
+        content: "";
+        display: block;
+        width: $page-title-after-width;
+        height: $page-title-after-height;
+        margin-top: $page-title-after-margin-top;
+        margin-bottom: $page-title-after-margin-bottom;
+
+        background-color: $page-title-after-bg;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    @media #{$media-xs} {
+        font-size: $page-title-font-size-xs;
+    }
+}
+
+.page__text {
+    margin-bottom: $page-text-margin-bottom;
+
+    font-size: $page-text-font-size;
+    line-height: $page-text-line-height;
+    color: $page-text-color;
+}

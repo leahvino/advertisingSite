@@ -1,0 +1,16 @@
+.ads-list__photo {
+    width: $ads-list-photo-width;
+}
+
+.ads-list__title {
+    min-width: $ads-list-title-width;
+    max-width: $ads-list-title-width;
+    text-overflow: $ads-list-title-text-overflow;
+    white-space: $ads-list-title-white-space;
+    overflow: hidden;
+}
+
+.ads-list__special {
+    font-weight: $ads-list-special-weight;
+    background-color: $ads-list-special-bg;
+}

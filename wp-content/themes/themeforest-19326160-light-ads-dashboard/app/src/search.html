@@ -1,0 +1,84 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <h1 class="page__title">Extend search</h1>
+        <div class="row">
+            <div class="col-lg-4  offset-lg-4  col-md-6  offset-md-3">
+                <form action="/" method="post">
+                    <div class="form__group">
+                        <label class="label" for="keyword">Keyword</label>
+                        <input class="input" type="text" name="keyword" id="keyword" placeholder="Keyword">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="category">Category</label>
+                        <div class="select">
+                            <select name="category" id="category">
+                                <option value="all">All</option>
+                                <option value="Work and business">Work and business</option>
+                                <option value="Transport">Transport</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Building">Building</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Clothes, Shoes">Clothes, Shoes</option>
+                                <option value="For Home">For Home</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="city_region">City, region</label>
+                        <div class="select">
+                            <select name="city_region" id="city_region">
+                                <option value="all">All</option>
+                                <option value="New York">New York</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="San Diego">San Diego</option>
+                                <option value="San Francisco">San Francisco</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="period">Period</label>
+                        <div class="select">
+                            <select name="period" id="period">
+                                <option value="all">All</option>
+                                <option value="Today">Today</option>
+                                <option value="Yesterday">Yesterday</option>
+                                <option value="Last week">Last week</option>
+                                <option value="Last month">Last month</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <button class="btn  btn--green  btn--full" type="submit">Search</button>
+                    </div>
+                </form>
+            </div><!-- /.col-lg-4  offset-lg-4  col-md-6  offset-md-3 -->
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

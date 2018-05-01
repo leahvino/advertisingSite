@@ -1,0 +1,87 @@
+//= templates/head.html
+
+
+<div class="page">
+
+    <!-- Header -->
+    //= templates/header.html
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <h1 class="page__title">Profile</h1>
+        <div class="row">
+            <div class="col-lg-3  offset-lg-2  col-md-6">
+                <div class="form__group">
+                    <div class="form__group">
+                        <label class="label" for="avatar">Photo</label>
+                        <img class="img" src="assets/i/avatar.png" width="200" height="200" alt="Simon Smith">
+                    </div>
+
+                    <label for="avatar" class="btn  btn--blue">
+                        <input class="hide" type="file" name="avatar" id="avatar">
+                        Browse...
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-6  offset-md-0">
+                <form action="/" method="post">
+                    <div class="form__group">
+                        <label class="label" for="firstname">First name*</label>
+                        <input class="input" type="text" name="firstname" id="firstname" value="Simon" placeholder="First name">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="secondname">Second name*</label>
+                        <input class="input" type="text" name="secondname" id="secondname" value="Smith" placeholder="Second name">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="phone">Phone*</label>
+                        <input class="input" type="tel" name="phone" id="phone" value="9874156852" placeholder="Phone">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="email">Email*</label>
+                        <input class="input" type="email" name="email" id="email" value="simon@mail.com" placeholder="Email">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="country">Country*</label>
+                        <div class="select">
+                            <select name="country" id="country">
+                                <option value="Latvia">Latvia</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="country">Website <span>(optional)</span></label>
+                        <input class="input" type="url" name="website" id="website" value="" placeholder="website.com">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="facebook">Facebook <span>(optional)</span></label>
+                        <input class="input" type="text" id="facebook" value="" placeholder="facebook.com/simon">
+                    </div>
+                    <div class="form__group">
+                        <button class="btn  btn--green  btn--full" type="submit">Save</button>
+                    </div>
+                </form>
+            </div><!-- /.col-lg-4  offset-lg-4  col-md-6  offset-md-3 -->
+        </div><!-- /.row -->
+
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    //= templates/footer.html
+
+</div><!-- /.page -->
+
+
+
+<!-- Modals -->
+//= templates/logout-modal.html
+
+
+
+<!-- JS -->
+//= templates/end.html

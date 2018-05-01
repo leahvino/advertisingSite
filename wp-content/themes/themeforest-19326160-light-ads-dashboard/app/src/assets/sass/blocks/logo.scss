@@ -1,0 +1,16 @@
+.logo {
+    display: block;
+    width: $logo-width;
+
+    position: absolute;
+    top: $logo-pos-top;
+    left: $logo-pos-left;
+    z-index: $logo-zindex;
+
+    transform: translateY($logo-translatex);
+
+    @media #{$media-sm} {
+        width: $logo-width-sm;
+        left: $logo-pos-left-sm;
+    }
+}

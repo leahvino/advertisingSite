@@ -1,0 +1,12 @@
+{
+  "name": "light-ads-dashboard",
+  "description": "Light Ads Dashboard Template For Themeforest.net",
+  "author": "Dmitry Valak",
+  "devDependencies": {
+    "jquery": "^3.0.0",
+    "slick-carousel": "slick.js#^1.6.0",
+    "sortable": "https://github.com/HubSpot/sortable.git#^0.8.0",
+    "remodal": "https://github.com/VodkaBears/Remodal.git#^1.1.0",
+    "card": "^2.1.1"
+  }
+}

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicons for all devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/i/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/i/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/i/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/i/favicons/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Light Ads Dashboard</title>
+</head>
+<body>
+
+
+<div class="page">
+
+
+    <!-- Header -->
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <a class="navbar__toggle" href="#" id="js-nav-burger">
+                            <span></span>
+                        </a>
+                        <a class="logo" href="index.html">
+                            <img class="img" src="assets/i/ads-logo.jpg" width="80" height="35" alt="Ads Dashboard">
+                        </a>
+                        <div class="navbar__wrapper" id="js-nav">
+                            <div class="header__profile">
+                                <div class="header__profile-item"><a href="balance.html"><i class="fa fa-credit-card"></i>Balance: $20</a></div>
+                                <div class="header__profile-item"><a href="profile.html"><i class="fa fa-user"></i>Simon Smith</a></div>
+                            </div>
+    
+                            <ul class="navbar__nav  navbar__nav--left" role="menubar">
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="add_ads.html" itemprop="url">add new advert</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="my_ads.html" itemprop="url">My ads</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="banner_list.html" itemprop="url">My banners</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="search.html" itemprop="url">Extend Search</a>
+                                </li>
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="pages.html" itemprop="url">Pages</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar__nav  navbar__nav--right" role="menubar">
+                                <li class="navbar__item" role="menuitem">
+                                    <a class="navbar__link" href="#" data-toggle="modal" data-target="#logout_modal" role="button">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </div><!-- /.row -->
+    
+        </div><!-- /.container -->
+    
+        <div class="header__intro">
+            <form class="header__search" action="/" method="post">
+                <input class="input" type="text" placeholder="Keyword + enter">
+                <button class="btn  btn--red" type="submit">Search</button>
+            </form>
+        </div>
+    </header><!-- /.header -->
+
+
+    <!-- Content -->
+    <main class="content  container">
+
+        <div class="row">
+            <div class="col-lg-9">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Work and business">Work and business</a>
+                                <img class="cat__icon" src="assets/i/work.svg" width="40" alt="Work and business">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#work_business">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="work_business">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Jobs</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Looking for job</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Courses, education</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Business contacts</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Lawyer services</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Financial services</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Translations</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Internet Services</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Transport">Transport</a>
+                                <img class="cat__icon" src="assets/i/car-wheel.svg" width="40" alt="Transport">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#transport">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="transport">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Cars</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Trucks</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Moto</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Bicycles</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Cars Exchange</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Repair and Parts</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Transportation</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Transport Rentals</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Real Estate">Real Estate</a>
+                                <img class="cat__icon" src="assets/i/house.svg" width="40" alt="Real Estate">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#real_estate">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="real_estate">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Apartments</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Houses, cottages</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Farms, estates</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Premises</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Offices</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Land and plots</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Forest</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Realtor Services</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Building">Building</a>
+                                <img class="cat__icon" src="assets/i/building.svg" width="40" alt="Building">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#building">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="building">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Building materials</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Construction works</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Tools and Technology</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Lease of tools</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Sanitary engineering</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Gardening equipment</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Projects, design</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Transportation and cargo</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Electronics">Electronics</a>
+                                <img class="cat__icon" src="assets/i/socket.svg" width="40" alt="Electronics">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#electronics">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="electronics">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Phones</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Appliances</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Computers</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Audio, Video, DVD, SAT</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Batteries</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">TV</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Photo and Optics</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">GPS navigators</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Clothes, Shoes">Clothes, Shoes</a>
+                                <img class="cat__icon" src="assets/i/t-shirt.svg" width="40" alt="Clothes, Shoes">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#clothes_shoes">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="clothes_shoes">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Women's clothing</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Men's wear</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Children's clothing, shoes</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Footwear</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Watches, sunglasses, handbags</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Jewellery</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Coveralls</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Seamstress services</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html">For Home</a>
+                                <img class="cat__icon" src="assets/i/sofa.svg" width="40" alt="">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#for_home">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="for_home">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Furniture, interior</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Health &amp; Beauty</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Jewelry, decorations</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Souvenirs</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Hand-made products</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Antiques, paintings</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">House plants</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Searches, finds</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Manufacturing">Manufacturing</a>
+                                <img class="cat__icon" src="assets/i/manufacturing.svg" width="40" alt="Manufacturing">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#manufacturing">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="manufacturing">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Equipment</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Manufacturing orders</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Chores</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Construction and repair</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Transportation and cargo</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Business contacts</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Rations</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Firewood, briquettes, pellets</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="For children">For children</a>
+                                <img class="cat__icon" src="assets/i/kids-couple.svg" width="40" alt="For children">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#for_children">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="for_children">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">For school</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Children's clothing, shoes</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Toys, swings</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Carriages</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Children's furniture</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Car seats, carrying</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Accessories and power</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Workshops</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Animals">Animals</a>
+                                <img class="cat__icon" src="assets/i/animal-prints.svg" width="40" alt="Animals">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#animals">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="animals">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Dogs, puppies</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Cats, kittens</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Rodents</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Parrots and birds</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Fish, aquarium</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Exotic animals</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Agricultural animals</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Veterinary science</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Agriculture">Agriculture</a>
+                                <img class="cat__icon" src="assets/i/tractor.svg" width="40" alt="Agriculture">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#agriculture">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="agriculture">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Animal husbandry</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Aviculture</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Fish industry</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Agricultural operations</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Agricultural machinery</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Vegetable gardening</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Fertilizers and chemicals</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Seeds and seedlings</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="cat">
+                            <h4 class="cat__title">
+                                <a href="cat_inner.html" title="Activities, hobbies">Activities, hobbies</a>
+                                <img class="cat__icon" src="assets/i/sun-bath.svg" width="40" alt="Activities, hobbies">
+                                <span class="cat__toggle" data-toggle="cat" data-target="#hobbies">
+                                    <img src="assets/i/expand-button.svg" width="15" alt="Toggle Cat">
+                                </span>
+                            </h4>
+                            <ul class="cat__list" id="hobbies">
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Hobbies</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Collecting</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Tickets, Concerts</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Music, tools, training</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Books</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Sports, leisure</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Hunting Fishing</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Tourism</a>
+                                </li>
+                                <li class="cat__list-item">
+                                    <a href="subcat.html">Other...</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+
+            </div><!-- /.col-lg-9 -->
+
+            <div class="col-lg-3">
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200x300" width="200" height="300" alt=""></a>
+                        <div class="banner__price">$700</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200" width="200" height="200" alt=""></a>
+                        <div class="banner__price">$10000</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+
+                <div class="ads__banners">
+                    <div class="banner">
+                        <a href="ads_inner.html"><img src="http://placehold.it/200x300" width="200" height="300" alt=""></a>
+                        <div class="banner__price">$3000000</div>
+                        <div class="banner__title">My awesome banner</div>
+                        <div class="banner__text">Me awesome banner text ohhhh yeah!!!</div>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
+
+
+    </main><!-- /.container -->
+
+
+    <!-- Footer -->
+    <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="container">
+    
+            <ul class="footer__list footer__list--inline">
+                <li class="footer__list-item">
+                    <a href="rules.html">Rules &amp; conditions</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="contacts.html">Contact Us</a>
+                </li>
+                <li class="footer__list-item">
+                    &copy; 2016 AdsDashboard.com
+                </li>
+            </ul>
+    
+        </div>
+    </footer>
+
+</div><!-- /.page -->
+
+
+
+
+<!-- Modals -->
+<div class="remodal" id="logout_modal" role="dialog">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h3 class="remodal__title">Logout?</h3>
+    <div class="remodal__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <button data-remodal-action="cancel" class="btn  btn--deep-orange">Cancel</button>
+    <button data-remodal-action="confirm" class="btn  btn--green">OK</button>
+</div>
+
+
+<!-- JS -->
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

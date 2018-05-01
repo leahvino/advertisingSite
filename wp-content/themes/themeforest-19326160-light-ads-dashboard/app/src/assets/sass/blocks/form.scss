@@ -1,0 +1,33 @@
+.form {
+    margin: $form-margin;
+
+    &--inline {
+
+        .form__group {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.form__group {
+    margin-bottom: $form-group-margin-bottom;
+}
+
+.form__hint {
+    margin-top: $form-hint-margin-top;
+    color: $form-hint-color;
+    font-size: $form-hint-font-size;
+    line-height: $form-hint-line-height;
+}
+
+.form__fieldset {
+    padding: $form-fieldset-padding;
+    margin: $form-fieldset-margin;
+
+    background-color: $form-fieldset-bg;
+    box-shadow: $form-fieldset-shadow;
+
+    border: 0;
+}
